@@ -1,5 +1,5 @@
     
-    # Create three columns for the results display
+# Create three columns for the results display
 col1, col2, col3 = st.columns([1, 1, 2])
     
 with col1:
