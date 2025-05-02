@@ -39,7 +39,7 @@ with col3:
     
     # Add additional information section
 with st.expander("What does this mean?", expanded=True):
-        st.markdown(f"""
+        st.markdown(f""")
         ### Tractor Ballast Recommendations
         
         Based on your {tractor_type} tractor with {tractor_power} hp and {implement_mounting} implement:
