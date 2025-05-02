@@ -39,7 +39,7 @@ with col3:
     
     # Add additional information section
 with st.expander("What does this mean?", expanded=True):
-        st.markdown(f""")
+        st.markdown(f"""
         ### Tractor Ballast Recommendations
         
         Based on your {tractor_type} tractor with {tractor_power} hp and {implement_mounting} implement:
@@ -50,3 +50,4 @@ with st.expander("What does this mean?", expanded=True):
         - **Weight/Power ratio**: {results['wp_ratio']:.1f} lb/hp (this indicates how much total weight is needed per horsepower).
         
         ### Why is proper ballasting important?
+        """)
