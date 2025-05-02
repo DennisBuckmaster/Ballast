@@ -2,17 +2,17 @@
     # Create three columns for the results display
 col1, col2, col3 = st.columns([1, 1, 2])
     
-    with col1:
+with col1:
         st.metric("Weight/Power Ratio", f"{results['wp_ratio']:.1f} lb/hp")
         st.metric("Total Tractor Weight", f"{results['total_weight']:,} lb")
     
-    with col2:
+with col2:
         st.metric("Front Axle Weight", f"{results['front_axle_weight']:,} lb", 
                   f"{results['front_axle_percentage']}%")
         st.metric("Rear Axle Weight", f"{results['rear_axle_weight']:,} lb", 
                   f"{results['rear_axle_percentage']}%")
     
-    with col3:
+with col3:
         # Create a visual representation of the weight distribution
         fig = go.Figure()
         
@@ -38,7 +38,7 @@ col1, col2, col3 = st.columns([1, 1, 2])
         st.plotly_chart(fig, use_container_width=True)
     
     # Add additional information section
-    with st.expander("What does this mean?", expanded=True):
+with st.expander("What does this mean?", expanded=True):
         st.markdown(f"""
         ### Tractor Ballast Recommendations
         
