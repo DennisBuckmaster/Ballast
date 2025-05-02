@@ -1,6 +1,6 @@
     
     # Create three columns for the results display
-    col1, col2, col3 = st.columns([1, 1, 2])
+col1, col2, col3 = st.columns([1, 1, 2])
     
     with col1:
         st.metric("Weight/Power Ratio", f"{results['wp_ratio']:.1f} lb/hp")
